@@ -1,0 +1,53 @@
+@import "./homepage";
+
+
+h1 {
+    font-family: 'Spectral', 'Serif';
+    font-weight: 100;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    /* font-family: 'Adobe Garamond Pro'; */
+    font-family: 'Spectral', 'Serif';
+    font-weight: 300;
+    color: black; 
+    font-style: normal; 
+    font-size: 14px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    text-align: center; 
+ 
+}
+
+.text{
+    width: 600px;
+    height: fit-content; 
+} 
+
+
+.paddel {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    padding-top: 50px;
+    
+} 
+
+
+

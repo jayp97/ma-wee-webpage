@@ -1,0 +1,315 @@
+
+header{
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Spectral', 'Serif';
+    font-weight: 300;
+    font-size: 20px;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        color: black; 
+    }
+
+    & :hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;  
+
+    li{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+.homepage-title{ 
+    padding-left: 60px;
+    font-family: 'Spectral', 'Serif';
+    font-weight: 300;
+    font-size: 35px;
+    text-align: start;
+   
+
+    a{
+        text-decoration: none;
+        color: red;
+    }
+}
+
+
+.linkedin-svg{
+    width: 18px;
+    padding-right: 18px;
+}
+
+.insta-svg{
+    width: 20px;
+    padding-right: 18px;
+}
+
+.youtube-svg{
+    width: 25px;
+    padding-right: 10px;
+}
+
+.github-svg{
+    width: 22px;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+div.header-socials{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+//////////////////////////////////////////
+.mobile-menu {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-rows: repeat(3, 10%);
+ }
+ .mobile-menu a {
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    font-family: 'Spectral', 'Serif';
+    font-weight: 200;
+    font-size: 40px;
+    transition: 0.3s;
+    align-self: center;
+ }
+ .mobile-menu a:hover {
+    color: #f1f1f1;
+ }
+
+ .mobile-menu div.socials{
+    margin-top: 50%;
+    a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+ }
+
+
+
+ .mobile-menu .closeBtn {
+    position: absolute;
+    top: 2px;
+    right: 44px;
+    font-size: 64px;
+    margin-left: 50px;
+ }
+
+
+
+////////////////////////////////////////
+
+main{
+    margin: auto;
+}
+
+
+.home-page-container{
+    margin-top: 30px;
+    // padding-top: 10px;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-rows: repeat(2, minmax(auto, 1fr));
+    grid-template-areas: "profile text" 
+                         "profile text" ;
+    align-items: center;
+    // background-color: blue;
+    justify-self: center; 
+}
+
+
+
+// .profile-image-container{
+//     width: 10%;
+//     height: 10%;
+// }
+
+.profile-image{
+    width: 80%;
+    grid-area: profile;
+    // background-color: khaki;
+    justify-self: center;
+}
+
+.profile-text{
+    font-family: 'Spectral', 'Serif';
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    width: 90%;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: left;
+    grid-area: text;
+    // background-color: lawngreen;
+}
+
+@media screen and (max-width: 850px) {
+    .home-page-container {
+        grid-template-areas: "profile profile" 
+                             "text  text" ;
+        justify-items: center;
+        
+    }
+    .profile-image{
+        grid-area: profile;
+        width: 70%;   
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .profile-image{
+        grid-area: profile;
+        width: 90%;   
+    }
+
+    .profile-text{
+        font-size: 1.5rem;
+        padding-left: 0px;
+    }
+}
+
+
+.homepage-quote{
+    font-family: 'Spectral', 'Serif';
+    font-weight: 100;
+    font-size: 20px;
+    font-style: normal;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.my-story-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 150px;
+
+    h1{
+        align-self: flex-start;
+        margin-bottom: -5px;
+    }
+}
+
+.my-story-p {
+    font-family: 'Spectral', 'Serif';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: start;
+}
+
+
+@media screen and (max-width: 850px) {
+    .my-story-div{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .my-story-div{
+        width: 80%;
+    }
+}
+
+////////////////////////////////////////////
+
+// I need to fix the whole menu bars thing 
+.topnav {
+    button  {
+    display: none;
+    }
+}
+
+  
+@media screen and (max-width: 850px) {
+    header{
+      display: flex; 
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+
+      div.homepage-title{
+          padding-left: 25px;
+      }
+
+    }
+
+    .topnav nav{
+        display: none;
+    }
+
+    .topnav .header-socials{
+        display: none;
+    }
+    // .topnav a:not(:first-child) {display: none;}
+    .topnav button {
+        margin-right: 25px;
+        display: flex;
+        justify-self: end;
+        border: none;
+        background-color: white;
+
+
+
+        img{
+            height: 40px;
+        }
+
+        
+    }
+
+    .topnav button:hover{
+        opacity: 20%;
+    }
+}
+  
